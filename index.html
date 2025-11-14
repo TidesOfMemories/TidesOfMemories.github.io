@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Update the title to be your resume title --><title>Your Name - Professional Resume</title>
+    <title>Peng Gao - Professional Resume</title>
     <style>
         body, html {
             margin: 0;
@@ -44,8 +44,8 @@
             max-width: 800px; /* Standard resume width */
             margin: 40px auto; /* Centered with top/bottom margin */
             padding: 40px;
-            /* Semi-transparent, dark blueish background - MADE HEADER AREA MORE TRANSPARENT */
-            background-color: rgba(10, 20, 30, 0.35); 
+            /* Semi-transparent, dark blueish background - MADE HEADER AREA EVEN MORE TRANSPARENT */
+            background-color: rgba(10, 20, 30, 0.25); 
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 12px;
             /* This creates the "frosted glass" effect */
@@ -56,7 +56,7 @@
 
         /* NEW: Styles for individual sections to give them a less transparent background */
         #resume-main section {
-            background-color: rgba(10, 20, 30, 0.75); /* Slightly less transparent than main - ALSO MORE TRANSPARENT */
+            background-color: rgba(10, 20, 30, 0.6); /* Slightly less transparent than main - ALSO MORE TRANSPARENT */
             padding: 20px;
             margin-bottom: 25px; /* Space between sections */
             border-radius: 8px;
@@ -85,10 +85,10 @@
         #resume-main h2 {
             font-size: 1.5rem;
             font-weight: 300;
-            color: #88ddff; /* Light blue for title */
+            color: #ffffff; /* CHANGED: Was #88ddff - now white for better contrast */
             margin-top: 4px;
             margin-bottom: 24px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* CHANGED: Slightly more opaque border */
             padding-bottom: 16px;
         }
 
@@ -98,7 +98,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #ffffff;
-            border-bottom: 1px solid #88ddff;
+            border-bottom: 1px solid #99faff; /* CHANGED: Brighter cyan border */
             padding-bottom: 8px;
             margin-top: 24px;
             margin-bottom: 16px;
@@ -107,7 +107,8 @@
         #resume-main p, #resume-main li {
             font-size: 1rem;
             line-height: 1.6;
-            font-weight: 100;
+            font-weight: 300; /* CHANGED: Was 100 - much thicker and more readable */
+            color: #ffffff; /* CHANGED: Was #f0f0f0 - pure white */
         }
 
         #resume-main ul {
@@ -124,7 +125,7 @@
         }
 
         #resume-main a {
-            color: #88ddff; /* Light blue links */
+            color: #99faff; /* CHANGED: Brighter cyan links */
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -147,7 +148,7 @@
 
         .job h5, .degree h5 {
             font-size: 1rem;
-            font-weight: 100;
+            font-weight: 300; /* CHANGED: Was 100 */
             color: #f0f0f0;
             margin: 4px 0 8px 0;
             font-style: italic;
@@ -265,62 +266,60 @@
     <!-- Scrollable Resume Content --><div id="resume-content">
         <main id="resume-main">
             <!-- HEADER --><header>
-                <h1 id="resume-name">Your Name</h1>
-                <h2 id="resume-title">Senior Software Engineer</h2>
+                <h1 id="resume-name">Peng Gao</h1>
+                <h2 id="resume-title">Software Engineer</h2>
             </header>
             
             <!-- CONTACT --><section id="contact">
                 <h3>Contact</h3>
                 <ul>
-                    <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-                    <li>Phone: (555) 123-4567</li>
-                    <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></li>
-                    <li>Portfolio: <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">yourwebsite.com</a></li>
+                    <li>Email: <a id="email-link" href="#">[Click to reveal email]</a></li>
+                    <!-- Phone number removed for privacy -->
+                    <li>LinkedIn: <a href="https://linkedin.com/in/penggao1992/" target="_blank" rel="noopener noreferrer">linkedin.com/in/penggao1992</a></li>
                 </ul>
             </section>
             
             <!-- SUMMARY --><section id="summary">
                 <h3>Professional Summary</h3>
-                <p>Innovative and detail-oriented Senior Software Engineer with 8+ years of experience in designing, developing, and deploying complex web applications. Proven expertise in JavaScript, React, and Node.js with a passion for creating performant, scalable, and user-centric solutions. Seeking to leverage my skills to build cutting-edge technology at a product-driven company.</p>
+                <p>Software Engineer with experience in large-scale cloud services, microservice architecture, and embedded systems. Skilled in C#, Python, and cloud-native technologies like Azure, Docker, and Kubernetes. A proven contributor to system modernization, test automation, and team mentorship.</p>
             </section>
             
             <!-- EXPERIENCE --><section id="experience">
                 <h3>Experience</h3>
                 <div class="job">
-                    <h4>Senior Software Engineer</h4>
-                    <h5>Tech Solutions Inc. | San Francisco, CA | Jan 2020 - Present</h5>
-                    <ul>
-                        <li>Led the architecture and development of a new microservices-based platform, improving system scalability and reducing API response times by 40%.</li>
-                        <li>Mentored a team of 4 junior developers, conducting code reviews and fostering a culture of high-quality code and continuous learning.</li>
-                        <li>Collaborated with product managers and designers to translate complex requirements into technical specifications and user-friendly features.</li>
-                    </ul>
+                    <h4>Software Engineer II</h4>
+                    <h5>Microsoft (Teams: Azure Cache for Redis & Azure Workflow) | 2022.05 - Present</h5>
+                    <!-- High-level, no bullet points as requested -->
                 </div>
                 <div class="job">
                     <h4>Software Engineer</h4>
-                    <h5>Web Innovations LLC | Austin, TX | Jun 2017 - Dec 2019</h5>
-                    <ul>
-                        <li>Developed and maintained the front-end of the company's flagship SaaS product using React, Redux, and TypeScript.</li>
-                        <li>Contributed to a 20% increase in user engagement by implementing key new features and optimizing application performance.</li>
-                        <li>Assisted in the migration of a legacy .NET application to a modern Node.js and React stack.</li>
-                    </ul>
+                    <h5>Ericsson Shanghai (Team: 5G Core Network Microservices) | 2020.04 - 2022.05</h5>
+                </div>
+                <div class="job">
+                    <h4>Firmware Engineer</h4>
+                    <h5>Shandong New Beiyang Information Technology Co. | 2018.08 - 2019.09</h5>
                 </div>
             </section>
             
             <!-- EDUCATION --><section id="education">
                 <h3>Education</h3>
                 <div class="degree">
-                    <h4>B.S. in Computer Science</h4>
-                    <h5>University of Technology | City, State | 2013 - 2017</h5>
+                    <h4>M.S. in Electrical and Computer Engineering</h4>
+                    <h5>North Dakota State University</h5>
+                </div>
+                <div class="degree">
+                    <h4>B.S. in Electrical Engineering</h4>
+                    <h5>North Dakota State University</h5>
                 </div>
             </section>
             
             <!-- SKILLS --><section id="skills">
                 <h3>Skills</h3>
                 <ul>
-                    <li><strong>Programming Languages:</strong> JavaScript (ESNext), TypeScript, Python, SQL</li>
-                    <li><strong>Frameworks & Libraries:</strong> React, Node.js, Express, WebGL, Three.js, Django</li>
-                    <li><strong>Databases:</strong> PostgreSQL, MongoDB, Redis</li>
-                    <li><strong>Tools & Platforms:</strong> Git, Docker, Kubernetes, AWS, Jira, CI/CD</li>
+                    <li><strong>Languages:</strong> C#, Python, Java, Go, C, SQL, Bash, PowerShell</li>
+                    <li><strong>Cloud & DevOps:</strong> K8s, Docker, Azure (Service Bus, Service Fabric, Redis, AAD, DevOps)</li>
+                    <li><strong>AI:</strong> Prompt Engineering, MCP Server, Agent Workflow</li>
+                    <li><strong>Tools & Methodologies:</strong> Git, Vim, Tmux, Jira, Wireshark, CI/CD, OOP, TDD, BDD</li>
                 </ul>
             </section>
         </main>
@@ -343,6 +342,9 @@
             if (gl) {
                 render();
             }
+
+            // Call the function to protect and set contact info
+            setupEmailLink();
         };
 
         // --- WEBGL ENGINE ---
@@ -434,6 +436,37 @@
 
             // Loop forever
             requestAnimationFrame(render);
+        }
+
+        // --- NEW FUNCTION TO PROTECT EMAIL ---
+        // This function sets a placeholder and reveals the real email on first click.
+        function setupEmailLink() {
+            const emailLink = document.getElementById('email-link');
+            if (emailLink) {
+                // 1. Set initial placeholder text
+                emailLink.textContent = '[Click to reveal email]';
+                emailLink.href = '#'; // Prevent navigation
+                
+                // 2. Add a one-time click event listener
+                emailLink.addEventListener('click', function revealEmail(e) {
+                    // Prevent the link from navigating to '#'
+                    e.preventDefault(); 
+                    
+                    // 3. The "hard-coded seed" is now a Base64 encoded string.
+                    const encodedEmail = 'cHA1MzExMDA2QGdtYWlsLmNvbQ==';
+                    
+                    // 4. Decode the email on the "2nd hop" (the click)
+                    const fullEmail = atob(encodedEmail);
+                    
+                    // 5. Reveal the real email and set the mailto link
+                    emailLink.textContent = fullEmail;
+                    emailLink.href = 'mailto:' + fullEmail;
+                    
+                    // 6. Remove this event listener so it only runs once.
+                    // From now on, it's a normal mailto link.
+                    emailLink.removeEventListener('click', revealEmail);
+                });
+            }
         }
 
         // All Audio and Narrative functions have been removed.
